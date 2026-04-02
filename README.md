@@ -20,9 +20,9 @@
 
 ---
 
-Most GitHub repos look like abandoned wikis. Walls of text, no badges, no CTAs, buried install instructions. Visitors bounce in seconds and never star. This skill rewrites your README as a high-converting landing page, tunes your metadata for search engines and LLMs, and adds the social proof signals that drive stars and followers.
+Most GitHub repos look like abandoned wikis. Walls of text, no badges, no CTAs, buried install instructions. Visitors bounce in seconds and never star. This skill rewrites your README as a high-converting landing page, tunes your metadata for search engines and LLMs, adds the social proof signals that drive stars -- and includes a built-in knowledge base on how to promote your repo across every channel that matters.
 
-[Install](#install) | [How It Works](#how-it-works) | [Before vs After](#before-vs-after) | [Features](#features) | [Contributing](#contributing)
+[Install](#install) | [How It Works](#how-it-works) | [Before vs After](#before-vs-after) | [Features](#features) | [Star Growth Knowledge Base](#star-growth-knowledge-base) | [Contributing](#contributing)
 
 </div>
 
@@ -41,7 +41,7 @@ Stars compound -- a repo with 50 stars gets recommended more than one with 5, wh
 | **Topics** | 0-3 generic tags | 10-20 targeted tags across purpose/tech/domain |
 | **Badges** | None or mismatched sizes | Consistent `for-the-badge` with star + follow CTAs |
 | **SEO** | H1 says "README" | H1/H2 contain target keywords naturally |
-| **Footer** | Nothing | Repeated CTAs + author attribution |
+| **Footer** | Nothing | Repeated CTAs + your own author attribution |
 | **Voice** | Robotic / AI-sounding | Human, direct, no slop phrases |
 
 ## Install
@@ -56,28 +56,32 @@ git clone https://github.com/199-biotechnologies/github-optimization-skill.git \
 
 Then tell Claude Code: "optimize this repo" or "use the github-optimization skill" on any repository.
 
+On first run, the skill asks for your name, X handle, company, and website -- then saves a config file so it never asks again. Every repo you optimize gets your branding, not ours.
+
 ## How It Works
 
-The skill runs a 7-step pipeline on your repo:
+The skill runs an 8-step pipeline on your repo:
 
 ```
-┌─────────────────────────────────────────────────────┐
-│                                                     │
-│  1. AUDIT      Read current README, metadata, tags  │
-│       ↓                                             │
-│  2. KEYWORDS   Find target search terms             │
-│       ↓                                             │
-│  3. METADATA   Optimize description + 10-20 topics  │
-│       ↓                                             │
-│  4. README     Rewrite as a landing page            │
-│       ↓                                             │
-│  5. HUMANISE   Strip AI patterns from all prose     │
-│       ↓                                             │
-│  6. EXTRAS     Add LICENSE, CONTRIBUTING if missing  │
-│       ↓                                             │
-│  7. PUBLISH    Commit, push, apply gh repo edit     │
-│                                                     │
-└─────────────────────────────────────────────────────┘
+┌──────────────────────────────────────────────────────────┐
+│                                                          │
+│  0. CONFIG     Load or create your user config (once)    │
+│       ↓                                                  │
+│  1. AUDIT      Read current README, metadata, tags       │
+│       ↓                                                  │
+│  2. KEYWORDS   Find target search terms                  │
+│       ↓                                                  │
+│  3. METADATA   Optimize description + 10-20 topics       │
+│       ↓                                                  │
+│  4. README     Rewrite as a landing page                 │
+│       ↓                                                  │
+│  5. HUMANISE   Strip AI patterns from all prose          │
+│       ↓                                                  │
+│  6. EXTRAS     Add LICENSE, CONTRIBUTING if missing       │
+│       ↓                                                  │
+│  7. PUBLISH    Commit, push, apply gh repo edit           │
+│                                                          │
+└──────────────────────────────────────────────────────────┘
 ```
 
 Step 5 chains into the [`humanise-text`](https://github.com/199-biotechnologies/humanise-text-skill) skill automatically -- every README passes through de-slopping before it ships.
@@ -86,20 +90,38 @@ Step 5 chains into the [`humanise-text`](https://github.com/199-biotechnologies/
 
 | Feature | What It Does |
 |---|---|
+| **Self-configuring** | Asks for your details once, saves to config, uses your branding on every repo |
 | **Landing page README** | Rewrites your README with CTAs, badges, pitch, visual workflow, and structured sections |
 | **SEO-optimized headers** | Places target keywords in H1/H2 for GitHub search, Google, and LLM discoverability |
 | **Metadata optimization** | Writes a punchy description under 120 chars + 10-20 topic tags |
-| **Badge system** | Adds consistent `for-the-badge` shields with star count, follow CTA, license, and more |
+| **Badge system** | Adds consistent `for-the-badge` shields with star count, optional follow CTA, license, and more |
 | **AI de-slopping** | Chains into [`humanise-text`](https://github.com/199-biotechnologies/humanise-text-skill) to strip words like "leverage", "seamlessly", "robust" |
-| **Before/After tables** | Shows concrete comparisons that convert visitors into stargazers |
-| **Author attribution** | Consistent footer with creator, company, and social links |
+| **Star growth advisor** | Built-in knowledge base with launch strategies, channel playbooks, and ROI rankings |
+| **Author attribution** | Consistent footer with your name, company, and social links -- not ours |
 | **Extras** | Adds MIT LICENSE and CONTRIBUTING.md if missing |
+
+## Star Growth Knowledge Base
+
+The skill includes a comprehensive knowledge base on how to grow GitHub stars. Ask "how do I get more stars?" or "launch strategy" and it draws from research across 50+ tactics:
+
+| Channel | Expected Stars | Key Insight |
+|---|---|---|
+| **Hacker News** | 121 avg in 24h, up to 1,500 | Post Tue-Thu 8-10 AM PT. Write like a peer, not a marketer. |
+| **Reddit** | 50-300 per post | r/SideProject allows self-promo. Tailor per subreddit. Build karma first. |
+| **Product Hunt** | 200-1,000 for top 5 POTD | Launch 12:01 AM PST. Reply to everything. 600-800 upvotes for #1 weekday. |
+| **Twitter/X** | 50-500+ if viral | Demo videos outperform text. Supporters' tweets > your own. |
+| **Awesome lists** | Slow burn, compounds | Submit PRs. Also: create your own list in your niche. |
+| **Newsletters** | 50-500 per feature | Console.dev, Changelog, PyCoder's Weekly accept submissions. |
+| **GitHub Trending** | 200-2,000+ | Triggered by velocity, not absolute numbers. Stack launches to hit it. |
+| **Stacked launch** | 200-2,000+ in a week | HN + Reddit + X + PH on the same day. The meta-strategy. |
+
+The full knowledge base covers: HN/Reddit/PH detailed playbooks, the stacked launch strategy, GitHub SEO, awesome lists, newsletter directory with submission links, 17 growth hacks, cold start strategy (first 100 stars), and GitHub Trending algorithm mechanics.
 
 ## What's Inside
 
 ```
 github-optimization-skill/
-├── SKILL.md           # The full skill definition (Claude Code reads this)
+├── SKILL.md           # Skill definition + star growth knowledge base
 ├── README.md          # You're reading it
 ├── LICENSE            # MIT
 └── CONTRIBUTING.md    # How to contribute
@@ -120,6 +142,22 @@ git clone https://github.com/199-biotechnologies/humanise-text-skill.git \
   ~/.claude/skills/humanise-text
 ```
 
+## User Config
+
+On first run, the skill creates `~/.claude/skills/github-optimization/.config.yml` with your details:
+
+```yaml
+# GitHub Optimization Skill -- User Config
+author_name: "Your Name"
+author_github: "yourusername"
+x_handle: "yourhandle"          # leave "" to skip Follow badge
+company_name: "Your Company"    # leave "" to skip
+company_url: "https://yourcompany.com"
+website_url: "https://yoursite.dev"
+```
+
+Edit this file anytime, or tell Claude Code "update my github-optimization config" to change it.
+
 ## Writing Rules the Skill Enforces
 
 The skill bans common AI writing patterns and enforces a direct, human voice:
@@ -130,7 +168,7 @@ The skill bans common AI writing patterns and enforces a direct, human voice:
 
 ## Contributing
 
-Contributions welcome. If you've found a pattern that drives more stars, or a README structure that converts better, open a PR.
+Contributions welcome. If you've found a pattern that drives more stars, a README structure that converts better, or a growth tactic worth adding to the knowledge base, open a PR.
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for the 3-step process.
 
